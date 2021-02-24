@@ -1,4 +1,6 @@
-
+@import 'partials/variables';
+@import 'partials/typography';
+@import 'partials/mixins';
 
 
 
@@ -11,8 +13,7 @@ html {
 
 body {
     box-sizing: border-box;
-    font-family: 'Open sans';
-    background-color: teal;
+    font-family: 'Open sans';    
 }
 
 *, 
@@ -22,5 +23,75 @@ body {
     padding: 0;
     box-sizing: inherit;
 }
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.main {
+    // width: 80%;
+    display: flex;
+    // background-color: dodgerblue;
+}
+
+.main__left-col {
+    margin-top: 7rem;
+    width: 70%;
+    // background-color: tomato;
+}
+
+.logo {
+    margin-bottom: 10rem;
+}
+
+.main__right-col {
+    width: 30%;
+    background-color: teal;
+}
+
+.main__right-col .main__image {
+    height: 100%;
+}
+
+
+
+.span-text {
+    color: tomato;
+    opacity: .5;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 8px;
+}
+
+.main__left-title {
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    letter-spacing: 8px;
+}
+
+.main__left-para {
+    width: 75%;
+    font-size: 2rem;
+    color: tomato;
+    opacity: .5;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    border-radius: 20px;
+    padding: 1rem;
+    width: 70%;
+    outline: none;
+}
+
+
 
 
