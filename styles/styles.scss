@@ -1,10 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
 @import 'partials/variables';
 @import 'partials/typography';
 @import 'partials/mixins';
-
-
-
-
 
 
 html {
@@ -13,7 +11,7 @@ html {
 
 body {
     box-sizing: border-box;
-    font-family: 'Open sans';    
+    font-family: $font-stack;    
 }
 
 *, 
@@ -31,14 +29,14 @@ body {
 
 
 .main {
-    // width: 80%;
+    width: 100%;
     height: 90vh;
     display: flex;
     // background-color: dodgerblue;
     background-image: url(../images/bg-pattern-desktop.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-size: contain;
 }
  
 .main__left-col {
@@ -62,7 +60,7 @@ body {
 }
 
 .span-text {
-    color: tomato;
+    color: hsl(0, 36%, 70%);
     opacity: .5;
     font-size: 10rem;
     text-transform: uppercase;
@@ -72,6 +70,7 @@ body {
 
 .main__left-title {
     font-size: 10rem;
+    color: $dark-grayish;
     text-transform: uppercase;
     margin-bottom: 2rem;
     letter-spacing: 8px;
@@ -80,36 +79,59 @@ body {
 .main__left-para {
     width: 75%;
     font-size: 2rem;
-    color: tomato;
+    color: hsl(0, 36%, 70%);
     opacity: .5;
     line-height: 1.5;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 form {
-    color: red;
+    color: hsl(0, 93%, 68%);
     width: 100%;
     position: relative;
 }
 
 input {
-    border: 1px solid red;
-    border-radius: 20px;
-    padding: 1rem;
+    border: 1px solid hsl(0, 93%, 68%);
+    border-radius: 50px;
     width: 70%;
     outline: none;
 }
 
+input[type=text] {
+    font-family: $font-stack; 
+    font-size: 1.8rem;
+    // color: red;
+    padding: 2rem;
+}
+
 button {
-    background-color: red;
+    background-color: hsl(0, 93%, 68%);
+    font-size: 2rem;
+    font-family: $font-stack; 
     color: #fff;
-    padding: 1rem 5rem;
-    border-radius: 20px;
+    padding: 2.3rem 5rem;
+    border-radius: 50px;
     outline: none;
     border: none;
     right: 24rem;
     position: absolute;
     font-size: 1.5rem;
+}
+footer {
+    background-color: $dark-grayish;
+    padding: 3rem;
+    color: #fff;
+}
+
+.attribution__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .attribution a {
+    font-size: 1.2rem;
+    color: #fff;
 }
 
 

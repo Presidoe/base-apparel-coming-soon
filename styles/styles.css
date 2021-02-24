@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 html {
   font-size: 62.5%;
 }
@@ -5,7 +6,7 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Open sans';
+  font-family: "Josefin Sans";
 }
 
 *,
@@ -23,14 +24,12 @@ body {
 }
 
 .main {
+  width: 100%;
   height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-image: url(../images/bg-pattern-desktop.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .main__left-col {
@@ -52,7 +51,7 @@ body {
 }
 
 .span-text {
-  color: tomato;
+  color: #ce9797;
   opacity: .5;
   font-size: 10rem;
   text-transform: uppercase;
@@ -62,6 +61,7 @@ body {
 
 .main__left-title {
   font-size: 10rem;
+  color: #413a3a;
   text-transform: uppercase;
   margin-bottom: 2rem;
   letter-spacing: 8px;
@@ -70,35 +70,58 @@ body {
 .main__left-para {
   width: 75%;
   font-size: 2rem;
-  color: tomato;
+  color: #ce9797;
   opacity: .5;
   line-height: 1.5;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 form {
-  color: red;
+  color: #f96262;
   width: 100%;
   position: relative;
 }
 
 input {
-  border: 1px solid red;
-  border-radius: 20px;
-  padding: 1rem;
+  border: 1px solid #f96262;
+  border-radius: 50px;
   width: 70%;
   outline: none;
 }
 
+input[type=text] {
+  font-family: "Josefin Sans";
+  font-size: 1.8rem;
+  padding: 2rem;
+}
+
 button {
-  background-color: red;
+  background-color: #f96262;
+  font-size: 2rem;
+  font-family: "Josefin Sans";
   color: #fff;
-  padding: 1rem 5rem;
-  border-radius: 20px;
+  padding: 2.3rem 5rem;
+  border-radius: 50px;
   outline: none;
   border: none;
   right: 24rem;
   position: absolute;
   font-size: 1.5rem;
+}
+
+footer {
+  background-color: #413a3a;
+  padding: 3rem;
+  color: #fff;
+}
+
+.attribution__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .attribution a {
+  font-size: 1.2rem;
+  color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */
